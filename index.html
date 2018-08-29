@@ -65,7 +65,11 @@
                                         </script>
                                 </section>
 
-
+				<section>
+					<iframe src="http://www.orf.at"
+     					allowfullscreen="" frameborder="0" height="480"
+     					width="853"></iframe>
+				</section>
 
 				<section>
 					<section>
@@ -216,6 +220,7 @@ see here: [link](https://cdn.rawgit.com/genio0815/genio0815.github.io/2f163324/s
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/reveal.js-menu/menu.js' },
+					{ src: 'plugin/external/external.js', condition: function() { return !!document.querySelector( '[data-external]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				
 				],
